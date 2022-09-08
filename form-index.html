@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- validate email error -->
+    <h1 id="title">Sports Membership Form</h1>
+    <p id="description">Thank you for signing up with us!</p>
+    <form action="" id="survey-form">
+       <fieldset>
+            <label id="name-label" class="label">Name: <input type="text" id="name" required/></label>
+            <label id="email-label" class="label">Email: <input type="email" id="email" required/></label>
+            <label id="number-label" class="label">Age: <input id="number" type="text" pattern="^\d{11}$" min="18" max="60"></label>
+        </fieldset>
+
+        <fieldset>
+            <h3>What sport are you interested in?</h3>
+
+            <label><input class="inline" type="checkbox" name="sport" value="baseball"> Baseball</label>
+            <label><input class="inline" type="checkbox" name="sport" value="basketball"> Basketball</label>
+            <label><input class="inline" type="checkbox" name="sport" value="badminton"> Badminton</label>
+            <label><input class="inline" type="checkbox" name="sport" value="tennis"> Tennis</label>
+            <label><input class="inline" type="checkbox" name="sport" value="volleyball"> Volleyball</label>
+            <label><input class="inline" type="checkbox" name="sport" value="others"> Others: ______</label>
+        </fieldset>
+
+        <fieldset>
+            <h3>Membership Plan</h3>
+            <label><input class="inline" type="radio" name="account-type" value="personal"> Personal Account</label>
+            <label><input class="inline" type="radio" name="account-type" value="group"> Group Account</label>
+        </fieldset>
+
+        <fieldset>
+            <h3>How did you hear about us?</h3>
+            <label>
+                <select name="" id="dropdown">
+                    <option value=""></option>
+                    <option value="forum">Forum</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>            
+        
+            <label class="label">Additional Comments
+                <textarea name="comments" cols="30" rows="3"></textarea>
+            </label>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit">
+       
+    </form>
+</body>
+</html>
